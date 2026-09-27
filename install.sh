@@ -10,10 +10,10 @@ echo -e 'Types: deb\nURIs: https://download.vscodium.com/debs\nSuites: vscodium\
 
 #the big bunch
 apt update && apt upgrade
-apt install ffmpeg mint-artwork mpv rclone rsync btop gimp inkscape kdeconnect obs-studio wg-quick curl wireguard-tools vnstat uptimed codium anki qbittorrent aria2 thunderbird konsole okular ark blender freecad git -y
+apt install aria2 ark blender btop ffmpeg freecad git gimp inkscape kdeconnect mint-artwork mpv rclone rsync curl wireguard-tools vnstat uptimed codium qbittorrent thunderbird konsole okular obs-studio -y
 
 #onlyoffice
-aria2 https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/onlyoffice-desktopeditors_amd64.deb
+aria2c https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/onlyoffice-desktopeditors_amd64.deb
 dpkg -i onlyoffice-desktopeditors_amd64.deb
 
 #brave
@@ -21,5 +21,5 @@ curl -fsS https://dl.brave.com/install.sh | sh
 
 
 if [ "$mintanswer" = "y" ] || [ "$mintanswer" = "Y" ]; then
-    aria2 https://mirror.koddos.net/linuxmint/iso/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso
+    aria2c https://mirror.koddos.net/linuxmint/iso/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso
 fi
