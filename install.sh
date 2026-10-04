@@ -10,7 +10,7 @@ echo -e 'Types: deb\nURIs: https://download.vscodium.com/debs\nSuites: vscodium\
 
 #the big bunch
 apt update && apt upgrade
-apt install aria2 ark blender btop ffmpeg freecad git gimp inkscape kdeconnect mint-artwork mpv rclone rsync curl wireguard-tools vnstat uptimed codium qbittorrent thunderbird konsole okular obs-studio -y
+apt install aria2 ark blender btop curl ffmpeg git gimp inkscape kdeconnect mint-artwork mpv rclone rsync wireguard-tools vnstat uptimed codium qbittorrent thunderbird konsole okular obs-studio -y
 
 #onlyoffice
 aria2c https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/onlyoffice-desktopeditors_amd64.deb
